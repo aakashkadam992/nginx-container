@@ -1,5 +1,5 @@
 pipeline {
-   agent any
+   agent agent { node { label 'localagent' } }
    stages {
         stage('Build Docker Image') {
            when {
