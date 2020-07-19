@@ -7,7 +7,7 @@ pipeline {
            }
            steps {
                script {
-                 app = docker.build("aakashkadam992/nginx-CI-image")
+                 app = docker.build("aakashkadam992/nginx-ci-image")
                  app.inside {
                     sh 'echo $(curl localhost:80)'
                  }
